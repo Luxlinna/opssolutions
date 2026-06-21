@@ -129,7 +129,7 @@ function TickerDots({ active, count }: { active: number; count: number }) {
           className="rounded-full"
           animate={{
             width: i === active ? 14 : 4,
-            background: i === active ? "#b9ff4b" : "rgba(185,255,75,0.2)",
+            background: i === active ? "#29abe2" : "rgba(41,171,226,0.2)",
           }}
           transition={{ duration: 0.3 }}
           style={{ height: 4 }}
@@ -141,13 +141,13 @@ function TickerDots({ active, count }: { active: number; count: number }) {
 
 // ─── Live Activity Ticker ────────────────────────────────────────────
 const tickerItems = [
-  { icon: "ri-rocket-2-line", text: "E-commerce platform shipped", client: "FreshCart Inc.", time: "2 mins ago", color: "#b9ff4b" },
+  { icon: "ri-rocket-2-line", text: "E-commerce platform shipped", client: "FreshCart Inc.", time: "2 mins ago", color: "#29abe2" },
   { icon: "ri-star-fill", text: "5-star review received", client: "NovaTech Solutions", time: "18 mins ago", color: "#ffd93d" },
   { icon: "ri-code-s-slash-line", text: "AI dashboard deployed", client: "Lumina Analytics", time: "1 hr ago", color: "#6cffcb" },
-  { icon: "ri-shield-check-line", text: "Security audit passed", client: "FinVault Bank", time: "2 hrs ago", color: "#b9ff4b" },
+  { icon: "ri-shield-check-line", text: "Security audit passed", client: "FinVault Bank", time: "2 hrs ago", color: "#29abe2" },
   { icon: "ri-user-add-line", text: "New client onboarded", client: "PulseHealth App", time: "4 hrs ago", color: "#ff9f43" },
   { icon: "ri-trophy-line", text: "Best Startup Tool — Awarded", client: "WebExcellence 2026", time: "Yesterday", color: "#ffd93d" },
-  { icon: "ri-rocket-2-line", text: "Mobile app v2.0 released", client: "StrideRun Co.", time: "Yesterday", color: "#b9ff4b" },
+  { icon: "ri-rocket-2-line", text: "Mobile app v2.0 released", client: "StrideRun Co.", time: "Yesterday", color: "#29abe2" },
   { icon: "ri-bar-chart-2-line", text: "SaaS dashboard launched", client: "OpsIQ Enterprise", time: "2 days ago", color: "#6cffcb" },
 ];
 
@@ -224,10 +224,10 @@ const proofItems = [
 ];
 
 const stats = [
-  { icon: "ri-rocket-2-line", value: 183, suffix: "+", label: "Projects Shipped", sub: "Across all verticals", color: "#b9ff4b" },
+  { icon: "ri-rocket-2-line", value: 183, suffix: "+", label: "Projects Shipped", sub: "Across all verticals", color: "#29abe2" },
   { icon: "ri-timer-flash-line", value: 7.4, suffix: " wks", decimals: 1, label: "Avg. Launch Time", sub: "From kickoff to live", color: "#6cffcb" },
   { icon: "ri-heart-3-line", value: 98, suffix: "%", label: "Client Retention", sub: "Clients who come back", color: "#ff9f43" },
-  { icon: "ri-global-line", value: 28, suffix: "", label: "Countries Served", sub: "Global client base", color: "#b9ff4b" },
+  { icon: "ri-global-line", value: 28, suffix: "", label: "Countries Served", sub: "Global client base", color: "#29abe2" },
   { icon: "ri-code-s-slash-line", value: 50, suffix: "M+", label: "Lines Shipped", sub: "In production codebases", color: "#6cffcb" },
   { icon: "ri-team-line", value: 60, suffix: "+", label: "Expert Engineers", sub: "Across 12 timezones", color: "#ffd93d" },
 ];
@@ -279,9 +279,9 @@ export default function SocialProofTicker() {
       style={{ perspective: "1200px" }}
     >
       {/* Background depth orbs */}
-      <DepthOrb className="top-0 left-[8%]" color="#b9ff4b" size={400} duration={9} />
+      <DepthOrb className="top-0 left-[8%]" color="#29abe2" size={400} duration={9} />
       <DepthOrb className="bottom-0 right-[5%]" color="#6cffcb" size={320} duration={12} />
-      <DepthOrb className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" color="#b9ff4b" size={500} duration={15} />
+      <DepthOrb className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" color="#29abe2" size={500} duration={15} />
 
       {/* 3D floating badge — top right */}
       <motion.div
@@ -292,7 +292,7 @@ export default function SocialProofTicker() {
       >
         <div
           className="bg-dc-card/80 border border-accent/20 rounded-2xl px-4 py-3 flex items-center gap-3"
-          style={{ boxShadow: "0 20px 50px rgba(0,0,0,0.3), 0 0 0 1px rgba(185,255,75,0.1), inset 0 1px 0 rgba(255,255,255,0.04)" }}
+          style={{ boxShadow: "0 20px 50px rgba(0,0,0,0.3), 0 0 0 1px rgba(41,171,226,0.1), inset 0 1px 0 rgba(255,255,255,0.04)" }}
         >
           <div className="w-8 h-8 flex items-center justify-center rounded-full bg-accent/15 border border-accent/25">
             <i className="ri-verified-badge-line text-accent text-sm" />

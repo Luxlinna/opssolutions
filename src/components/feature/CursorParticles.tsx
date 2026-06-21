@@ -100,9 +100,9 @@ export default function CursorParticles() {
 
         // Radial glow gradient
         const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, radius * 2.5);
-        g.addColorStop(0, `rgba(185,255,75,${alpha})`);
-        g.addColorStop(0.45, `rgba(185,255,75,${alpha * 0.4})`);
-        g.addColorStop(1, `rgba(185,255,75,0)`);
+        g.addColorStop(0, `rgba(41,171,226,${alpha})`);
+        g.addColorStop(0.45, `rgba(41,171,226,${alpha * 0.4})`);
+        g.addColorStop(1, `rgba(41,171,226,0)`);
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, radius * 2.5, 0, Math.PI * 2);

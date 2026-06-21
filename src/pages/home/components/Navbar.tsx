@@ -41,7 +41,7 @@ function DropdownMenu({
       exit={{ opacity: 0, y: 8, scale: 0.97 }}
       transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
       className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-dc-bg/98 backdrop-blur-xl border border-dc-text/10 rounded-2xl overflow-hidden z-50"
-      style={{ boxShadow: "0 20px 60px rgba(0,0,0,0.35), 0 0 0 1px rgba(185,255,75,0.06)" }}
+      style={{ boxShadow: "0 20px 60px rgba(0,0,0,0.35), 0 0 0 1px rgba(41,171,226,0.06)" }}
     >
       <div className="p-2 flex flex-col gap-0.5">
         {items.map((item) => (
@@ -144,8 +144,8 @@ export default function Navbar() {
         className="fixed top-0 left-0 w-full h-[3px] z-[60] origin-left will-change-transform"
         style={{
           scaleX: progressScaleX,
-          background: "linear-gradient(90deg, #b9ff4b 0%, #a8f040 50%, #b9ff4b 100%)",
-          boxShadow: "0 0 12px 2px rgba(185,255,75,0.55)",
+          background: "linear-gradient(90deg, #29abe2 0%, #1e9fd8 50%, #29abe2 100%)",
+          boxShadow: "0 0 12px 2px rgba(41,171,226,0.55)",
         }}
       />
 

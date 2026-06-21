@@ -30,7 +30,7 @@ export default function BlogPostPage() {
 
   if (!post) {
     return (
-      <div className="bg-[#0b0a08] min-h-screen flex items-center justify-center px-6">
+      <div className="bg-[#080d1a] min-h-screen flex items-center justify-center px-6">
         <motion.div
           className="text-center max-w-md"
           initial={{ opacity: 0, y: 20 }}

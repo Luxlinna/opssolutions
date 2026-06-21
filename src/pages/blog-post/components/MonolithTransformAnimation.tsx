@@ -15,8 +15,8 @@ interface ServiceNode {
 }
 
 const SERVICES: ServiceNode[] = [
-  { id: "gateway",   label: "API Gateway",    sub: "Nginx + Istio",     icon: "ri-router-line",             color: "#b9ff4b", xPct: 50, yPct:  7 },
-  { id: "auth",      label: "Auth Service",   sub: "JWT + OAuth2",      icon: "ri-shield-check-line",        color: "#4ade80", xPct: 12, yPct: 37 },
+  { id: "gateway",   label: "API Gateway",    sub: "Nginx + Istio",     icon: "ri-router-line",             color: "#29abe2", xPct: 50, yPct:  7 },
+  { id: "auth",      label: "Auth Service",   sub: "JWT + OAuth2",      icon: "ri-shield-check-line",        color: "#29abe2", xPct: 12, yPct: 37 },
   { id: "orders",    label: "Order Service",  sub: "CQRS / Event-src",  icon: "ri-shopping-bag-3-line",      color: "#fbbf24", xPct: 33, yPct: 37 },
   { id: "notifs",    label: "Notifications",  sub: "Extracted first",   icon: "ri-notification-3-line",      color: "#38bdf8", xPct: 65, yPct: 37 },
   { id: "users",     label: "User Service",   sub: "Profile + prefs",   icon: "ri-user-settings-line",       color: "#a78bfa", xPct: 87, yPct: 37 },
@@ -348,7 +348,7 @@ function PhaseHeader({ phase }: { phase: Phase }) {
     monolith:   { text: "BEFORE: Rails Monolith",        color: "#d97706", icon: "ri-building-line" },
     cracking:   { text: "DECOMPOSING: Breaking Apart",   color: "#ef4444", icon: "ri-error-warning-line" },
     emerging:   { text: "EXTRACTING: Services Emerging", color: "#38bdf8", icon: "ri-git-branch-line" },
-    mesh:       { text: "AFTER: Live Microservices Mesh", color: "#b9ff4b", icon: "ri-node-tree" },
+    mesh:       { text: "AFTER: Live Microservices Mesh", color: "#29abe2", icon: "ri-node-tree" },
   };
   const cfg = labels[phase];
 
@@ -382,11 +382,11 @@ function PhaseHeader({ phase }: { phase: Phase }) {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <div className="text-center">
-            <p className="text-[#b9ff4b] font-bold text-sm leading-none">12×</p>
+            <p className="text-[#29abe2] font-bold text-sm leading-none">12×</p>
             <p className="text-white/30 text-[9px] font-mono mt-0.5">faster deploys</p>
           </div>
           <div className="text-center">
-            <p className="text-emerald-400 font-bold text-sm leading-none">0s</p>
+            <p className="text-accent font-bold text-sm leading-none">0s</p>
             <p className="text-white/30 text-[9px] font-mono mt-0.5">downtime</p>
           </div>
           <div className="text-center">
@@ -442,7 +442,7 @@ export default function MonolithTransformAnimation() {
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
-            backgroundImage: "linear-gradient(#b9ff4b 1px, transparent 1px), linear-gradient(90deg, #b9ff4b 1px, transparent 1px)",
+            backgroundImage: "linear-gradient(#29abe2 1px, transparent 1px), linear-gradient(90deg, #29abe2 1px, transparent 1px)",
             backgroundSize: "48px 48px",
           }}
         />

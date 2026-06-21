@@ -228,7 +228,7 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
       candles.forEach((c, i) => {
         const x = cw * (i + 1);
         const bull = c.close >= c.open;
-        const col = bull ? "#22c55e" : "#ef4444";
+        const col = bull ? "#29abe2" : "#ef4444";
         const isLast = i === candles.length - 1;
         const formPct = isLast ? Math.min(1, (tick % 90) / 45) : 1;
 
@@ -268,7 +268,7 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
       ctx.beginPath();
       ctx.strokeStyle = "rgba(74,222,128,0.7)";
       ctx.lineWidth = 1.5;
-      ctx.shadowColor = "#4ade80";
+      ctx.shadowColor = "#29abe2";
       ctx.shadowBlur = 6;
       candles.forEach((c, i) => {
         const x = cw * (i + 1);
@@ -326,7 +326,7 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
         style={{ filter: "brightness(0.20) saturate(1.8) hue-rotate(-8deg)" }}
       />
       {/* Colour grade */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-emerald-950/40 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-blue-950/40 pointer-events-none" />
 
       {/* 3D tilt wrapper — preserve-3d for depth layers */}
       <div
@@ -341,10 +341,10 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
         <div className="flex items-center justify-between px-4 pt-3 pb-1.5 shrink-0">
           <div className="flex items-center gap-2">
             <div
-              className="w-1.5 h-1.5 rounded-full bg-emerald-400"
-              style={{ boxShadow: "0 0 6px #4ade80", animation: "bci-bloom-glow 1.2s ease-in-out infinite" }}
+              className="w-1.5 h-1.5 rounded-full bg-accent"
+              style={{ boxShadow: "0 0 6px #29abe2", animation: "bci-bloom-glow 1.2s ease-in-out infinite" }}
             />
-            <span className="text-emerald-400/85 text-[9px] font-mono tracking-widest">NEURAL-FX · TRADING AI</span>
+            <span className="text-accent/85 text-[9px] font-mono tracking-widest">NEURAL-FX · TRADING AI</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-red-400/70 text-[9px] font-mono">● REC</span>
@@ -365,7 +365,7 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
                   className="font-mono font-extrabold leading-none block"
                   style={{
                     fontSize: "clamp(13px, 2.8vw, 20px)",
-                    color: up ? "#4ade80" : "#f87171",
+                    color: up ? "#29abe2" : "#f87171",
                     textShadow: up
                       ? "0 0 18px rgba(74,222,128,0.75), 0 0 40px rgba(74,222,128,0.3)"
                       : "0 0 18px rgba(248,113,113,0.75), 0 0 40px rgba(248,113,113,0.3)",
@@ -375,8 +375,8 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
                 </span>
               </div>
               <div className="flex items-center gap-1 mb-0.5">
-                <i className={`text-[10px] ${up ? "ri-arrow-up-line text-emerald-400" : "ri-arrow-down-line text-red-400"}`} />
-                <span className={`text-[9px] font-mono font-semibold ${up ? "text-emerald-400" : "text-red-400"}`}>
+                <i className={`text-[10px] ${up ? "ri-arrow-up-line text-accent" : "ri-arrow-down-line text-red-400"}`} />
+                <span className={`text-[9px] font-mono font-semibold ${up ? "text-accent" : "text-red-400"}`}>
                   {up ? "+1.24%" : "-0.58%"}
                 </span>
               </div>
@@ -386,7 +386,7 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
                   style={{
                     background: signal === "BUY" ? "rgba(34,197,94,0.14)" : "rgba(239,68,68,0.14)",
                     border: `1px solid ${signal === "BUY" ? "rgba(74,222,128,0.45)" : "rgba(248,113,113,0.45)"}`,
-                    color: signal === "BUY" ? "#4ade80" : "#f87171",
+                    color: signal === "BUY" ? "#29abe2" : "#f87171",
                     boxShadow: signal === "BUY"
                       ? "0 0 12px rgba(74,222,128,0.28), inset 0 0 6px rgba(74,222,128,0.08)"
                       : "0 0 12px rgba(248,113,113,0.28), inset 0 0 6px rgba(248,113,113,0.08)",
@@ -425,17 +425,17 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
                 <span className="text-white/25 text-[7px] font-mono">{v}</span>
               </div>
             ))}
-            <div className="h-px bg-emerald-500/25 my-1" />
+            <div className="h-px bg-accent/25 my-1" />
             {[["67,998","2.31"],["67,952","0.96"],["67,910","1.88"]].map(([p, v], i) => (
               <div key={i} className="flex justify-between mb-0.5">
-                <span className="text-emerald-400/60 text-[7px] font-mono">{p}</span>
+                <span className="text-accent/60 text-[7px] font-mono">{p}</span>
                 <span className="text-white/25 text-[7px] font-mono">{v}</span>
               </div>
             ))}
             <div className="mt-2 pt-1.5 border-t border-white/5">
               <span className="text-white/20 text-[7px] font-mono block">P&amp;L TODAY</span>
               <span
-                className="text-emerald-400 font-bold font-mono block"
+                className="text-accent font-bold font-mono block"
                 style={{ fontSize: "9px", textShadow: "0 0 8px rgba(74,222,128,0.5)" }}
               >
                 +$24,182
@@ -450,8 +450,8 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
             {tickers.map((t, i) => (
               <div key={i} className="flex items-center gap-1 shrink-0">
                 <span className="text-white/30 text-[7px] font-mono">{t.pair}</span>
-                <span className={`text-[7px] font-mono font-medium ${t.up ? "text-emerald-400/75" : "text-red-400/75"}`}>{t.p}</span>
-                <i className={`text-[7px] ${t.up ? "ri-arrow-up-s-fill text-emerald-400/50" : "ri-arrow-down-s-fill text-red-400/50"}`} />
+                <span className={`text-[7px] font-mono font-medium ${t.up ? "text-accent/75" : "text-red-400/75"}`}>{t.p}</span>
+                <i className={`text-[7px] ${t.up ? "ri-arrow-up-s-fill text-accent/50" : "ri-arrow-down-s-fill text-red-400/50"}`} />
               </div>
             ))}
           </div>
@@ -459,10 +459,10 @@ function TradingAIEffect({ src, alt }: { src: string; alt: string }) {
       </div>
 
       {/* Corner brackets (outside the tilt so they stay fixed on the frame) */}
-      <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-emerald-400/50 pointer-events-none" />
-      <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-emerald-400/50 pointer-events-none" />
-      <div className="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-emerald-400/50 pointer-events-none" />
-      <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-emerald-400/50 pointer-events-none" />
+      <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-accent/50 pointer-events-none" />
+      <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-accent/50 pointer-events-none" />
+      <div className="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-accent/50 pointer-events-none" />
+      <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-accent/50 pointer-events-none" />
 
       {/* Scan sweep */}
       <div
@@ -648,7 +648,7 @@ function MatrixRainEffect({ src, alt }: { src: string; alt: string }) {
               {Array.from({ length: 8 }, (_, j) => (
                 <span
                   key={j}
-                  className="text-emerald-400 text-xs font-mono text-center block"
+                  className="text-accent text-xs font-mono text-center block"
                   style={{
                     opacity: 1 - j * 0.11,
                     textShadow: j === 0 ? "0 0 8px #34d399" : "none",
@@ -664,8 +664,8 @@ function MatrixRainEffect({ src, alt }: { src: string; alt: string }) {
       </div>
       {/* Corner HUD */}
       <div className="absolute top-3 left-3 pointer-events-none">
-        <span className="text-emerald-400/50 text-xs font-mono block">SYS_MIGRATE</span>
-        <span className="text-emerald-400/30 text-xs font-mono block">0x{Math.floor(Math.random() * 0xFFFF).toString(16).toUpperCase().padStart(4, "0")}</span>
+        <span className="text-accent/50 text-xs font-mono block">SYS_MIGRATE</span>
+        <span className="text-accent/30 text-xs font-mono block">0x{Math.floor(Math.random() * 0xFFFF).toString(16).toUpperCase().padStart(4, "0")}</span>
       </div>
     </div>
   );
@@ -756,8 +756,8 @@ function GPUClusterEffect({ src, alt }: { src: string; alt: string }) {
   }, []);
 
   const avgUtil = gpus.reduce((s, g) => s + g.util, 0) / gpus.length;
-  const getUC = (u: number) => u > 85 ? "#f87171" : u > 65 ? "#fbbf24" : "#4ade80";
-  const getSC = (s: string) => s === "TRAIN" ? "#fbbf24" : s === "INFER" ? "#4ade80" : "#6b7280";
+  const getUC = (u: number) => u > 85 ? "#f87171" : u > 65 ? "#fbbf24" : "#29abe2";
+  const getSC = (s: string) => s === "TRAIN" ? "#fbbf24" : s === "INFER" ? "#29abe2" : "#6b7280";
 
   return (
     <div ref={containerRef} className="relative w-full h-full overflow-hidden select-none" style={{ perspective: "900px" }}>

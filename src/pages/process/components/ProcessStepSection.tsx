@@ -51,7 +51,7 @@ export default function ProcessStepSection({ step, index, total, onNext, onConta
       {/* Glowing accent orb behind card */}
       <motion.div
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full pointer-events-none"
-        style={{ background: "radial-gradient(circle, rgba(185,255,75,0.06) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, rgba(41,171,226,0.06) 0%, transparent 70%)" }}
         animate={inView ? { scale: [1, 1.15, 1], opacity: [0.4, 0.8, 0.4] } : {}}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       />
@@ -70,7 +70,7 @@ export default function ProcessStepSection({ step, index, total, onNext, onConta
             background: "rgba(10, 12, 16, 0.82)",
             backdropFilter: "blur(28px)",
             WebkitBackdropFilter: "blur(28px)",
-            boxShadow: "0 0 0 1px rgba(185,255,75,0.08), 0 40px 80px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.04)",
+            boxShadow: "0 0 0 1px rgba(41,171,226,0.08), 0 40px 80px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.04)",
           }}
         >
           {/* Top bar */}
@@ -94,7 +94,7 @@ export default function ProcessStepSection({ step, index, total, onNext, onConta
                   className="rounded-full"
                   animate={{
                     width: i === index ? 20 : 6,
-                    backgroundColor: i === index ? "#b9ff4b" : i < index ? "rgba(185,255,75,0.35)" : "rgba(255,255,255,0.1)",
+                    backgroundColor: i === index ? "#29abe2" : i < index ? "rgba(41,171,226,0.35)" : "rgba(255,255,255,0.1)",
                   }}
                   transition={{ duration: 0.4 }}
                   style={{ height: 6 }}
@@ -166,7 +166,7 @@ export default function ProcessStepSection({ step, index, total, onNext, onConta
               {/* Tools + outcome */}
               <motion.div
                 className="rounded-2xl p-5 flex flex-col gap-4"
-                style={{ background: "rgba(185,255,75,0.04)", border: "1px solid rgba(185,255,75,0.12)" }}
+                style={{ background: "rgba(41,171,226,0.04)", border: "1px solid rgba(41,171,226,0.12)" }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, delay: 0.5 }}

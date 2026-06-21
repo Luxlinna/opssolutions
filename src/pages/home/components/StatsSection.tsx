@@ -148,7 +148,7 @@ function StatCard({ item, index }: { item: StatItem; index: number }) {
       {/* Hover radial glow */}
       <div
         className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-        style={{ background: "radial-gradient(circle at 50% 90%, rgba(185,255,75,0.06) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(circle at 50% 90%, rgba(41,171,226,0.06) 0%, transparent 70%)" }}
       />
 
       {/* Icon */}
@@ -190,11 +190,11 @@ function StatCard({ item, index }: { item: StatItem; index: number }) {
       {/* Corner glow burst on landing */}
       <motion.div
         className="absolute inset-0 rounded-2xl pointer-events-none"
-        initial={{ boxShadow: "inset 0 0 0 1px rgba(185,255,75,0.55)" }}
+        initial={{ boxShadow: "inset 0 0 0 1px rgba(41,171,226,0.55)" }}
         animate={
           inView
-            ? { boxShadow: "inset 0 0 0 1px rgba(185,255,75,0)" }
-            : { boxShadow: "inset 0 0 0 1px rgba(185,255,75,0)" }
+            ? { boxShadow: "inset 0 0 0 1px rgba(41,171,226,0)" }
+            : { boxShadow: "inset 0 0 0 1px rgba(41,171,226,0)" }
         }
         transition={{ duration: 1.4, delay: index * 0.1 + 1.3, ease: "easeOut" }}
       />
@@ -213,13 +213,13 @@ export default function StatsSection() {
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <motion.div
           className="absolute top-1/2 left-[12%] w-72 h-72 rounded-full"
-          style={{ background: "radial-gradient(circle, rgba(185,255,75,0.05) 0%, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, rgba(41,171,226,0.05) 0%, transparent 70%)" }}
           animate={{ x: [0, 22, 0], y: [0, -18, 0], scale: [1, 1.1, 1] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
           className="absolute top-1/3 right-[8%] w-80 h-80 rounded-full"
-          style={{ background: "radial-gradient(circle, rgba(185,255,75,0.04) 0%, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, rgba(41,171,226,0.04) 0%, transparent 70%)" }}
           animate={{ x: [0, -20, 0], y: [0, 22, 0], scale: [1, 1.08, 1] }}
           transition={{ duration: 14, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         />

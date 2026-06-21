@@ -100,7 +100,7 @@ export default function WorkCaseStudyPage() {
 
   if (!study) {
     return (
-      <div className="bg-[#0b0a08] min-h-screen flex items-center justify-center">
+      <div className="bg-[#080d1a] min-h-screen flex items-center justify-center">
         <div className="text-center">
           <p className="text-white/40 mb-4">Project not found.</p>
           <button onClick={() => navigate("/")} className="text-accent hover:underline cursor-pointer">Back to Home</button>
@@ -110,9 +110,9 @@ export default function WorkCaseStudyPage() {
   }
 
   return (
-    <div className="bg-[#0b0a08] min-h-screen">
+    <div className="bg-[#080d1a] min-h-screen">
       {/* ── Nav ── */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-[#0b0a08]/90 backdrop-blur-md border-b border-white/5">
+      <header className="fixed top-0 left-0 w-full z-50 bg-[#080d1a]/90 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-10 h-18 flex items-center justify-between h-[68px]">
           <button onClick={() => navigate(-1)} className="flex items-center gap-2 text-white/40 hover:text-white transition-colors cursor-pointer whitespace-nowrap">
             <i className="ri-arrow-left-line text-sm"></i>
@@ -131,8 +131,8 @@ export default function WorkCaseStudyPage() {
       <section ref={heroRef} className="relative h-[85vh] min-h-[560px] overflow-hidden flex items-end">
         <motion.div className="absolute inset-0" style={{ y: heroY }}>
           <img src={study.heroImage} alt={study.title} className="w-full h-full object-cover object-top" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0b0a08] via-[#0b0a08]/60 to-[#0b0a08]/20" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0b0a08]/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#080d1a] via-[#080d1a]/60 to-[#080d1a]/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#080d1a]/30 to-transparent" />
         </motion.div>
 
         <motion.div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-10 pb-16 md:pb-20" style={{ opacity: heroOpacity }}>
@@ -235,7 +235,7 @@ export default function WorkCaseStudyPage() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: i * 0.07 }}
                 >
-                  <div className="w-5 h-5 flex items-center justify-center rounded-full mt-0.5 shrink-0" style={{ background: activeTab === "challenge" ? "rgba(239,68,68,0.12)" : "rgba(185,255,75,0.12)" }}>
+                  <div className="w-5 h-5 flex items-center justify-center rounded-full mt-0.5 shrink-0" style={{ background: activeTab === "challenge" ? "rgba(239,68,68,0.12)" : "rgba(41,171,226,0.12)" }}>
                     <i className={`text-[10px] ${activeTab === "challenge" ? "ri-close-line text-red-400" : "ri-check-line text-accent"}`}></i>
                   </div>
                   <p className="text-white/55 text-sm leading-relaxed">{point}</p>
@@ -313,7 +313,7 @@ export default function WorkCaseStudyPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <div className="absolute top-0 right-0 w-64 h-64 pointer-events-none" style={{ background: "radial-gradient(circle at top right, rgba(185,255,75,0.05) 0%, transparent 65%)" }} />
+          <div className="absolute top-0 right-0 w-64 h-64 pointer-events-none" style={{ background: "radial-gradient(circle at top right, rgba(41,171,226,0.05) 0%, transparent 65%)" }} />
           <i className="ri-double-quotes-l text-accent/20 text-6xl absolute top-6 left-8 leading-none"></i>
           <p className="text-white/75 text-xl md:text-2xl leading-relaxed italic mb-8 relative z-10 mt-6">{study.quote.text}</p>
           <div className="flex items-center gap-4">

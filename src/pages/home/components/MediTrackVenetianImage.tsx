@@ -61,8 +61,8 @@ export default function MediTrackVenetianImage({ triggered = false, hovered = fa
         className="absolute inset-0 pointer-events-none z-10 rounded-2xl"
         animate={{
           boxShadow: hovered
-            ? "inset 0 0 0 1.5px rgba(185,255,75,0.35), inset 0 0 40px rgba(185,255,75,0.08)"
-            : "inset 0 0 0 0px rgba(185,255,75,0)",
+            ? "inset 0 0 0 1.5px rgba(41,171,226,0.35), inset 0 0 40px rgba(41,171,226,0.08)"
+            : "inset 0 0 0 0px rgba(41,171,226,0)",
         }}
         transition={{ duration: 0.35 }}
       />
@@ -72,7 +72,7 @@ export default function MediTrackVenetianImage({ triggered = false, hovered = fa
         className="absolute inset-0 pointer-events-none z-10"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(0deg, rgba(185,255,75,0.025) 0px, rgba(185,255,75,0.025) 1px, transparent 1px, transparent 3px)",
+            "repeating-linear-gradient(0deg, rgba(41,171,226,0.025) 0px, rgba(41,171,226,0.025) 1px, transparent 1px, transparent 3px)",
         }}
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.4 }}
@@ -88,7 +88,7 @@ export default function MediTrackVenetianImage({ triggered = false, hovered = fa
               style={{
                 left: `calc(${((i + 1) / N) * 100}% - 1px)`,
                 width: "1.5px",
-                background: "rgba(185,255,75,0.55)",
+                background: "rgba(41,171,226,0.55)",
               }}
               initial={{ opacity: 0, scaleY: 0 }}
               animate={{ opacity: [0, 1, 0], scaleY: [0, 1, 1, 0] }}
@@ -104,7 +104,7 @@ export default function MediTrackVenetianImage({ triggered = false, hovered = fa
             style={{
               height: "2px",
               background:
-                "linear-gradient(90deg, transparent 0%, rgba(185,255,75,0.95) 50%, transparent 100%)",
+                "linear-gradient(90deg, transparent 0%, rgba(41,171,226,0.95) 50%, transparent 100%)",
             }}
             initial={{ top: "-2%", opacity: 0 }}
             animate={{ top: ["-2%", "102%"], opacity: [0, 1, 1, 0] }}

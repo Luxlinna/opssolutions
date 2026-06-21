@@ -14,42 +14,42 @@ const SERVICE_TECHS: ServiceTech[] = [
     icon: "ri-code-s-slash-line",
     title: "Web Dev",
     tags: ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL"],
-    color: "rgba(185,255,75,0.8)",
+    color: "rgba(41,171,226,0.8)",
     number: "01",
   },
   {
     icon: "ri-smartphone-line",
     title: "Mobile",
     tags: ["React Native", "Flutter", "iOS", "Android", "Expo"],
-    color: "rgba(185,255,75,0.8)",
+    color: "rgba(41,171,226,0.8)",
     number: "02",
   },
   {
     icon: "ri-cloud-line",
     title: "Cloud",
     tags: ["AWS", "Docker", "Kubernetes", "Terraform", "Datadog"],
-    color: "rgba(185,255,75,0.8)",
+    color: "rgba(41,171,226,0.8)",
     number: "03",
   },
   {
     icon: "ri-palette-line",
     title: "UI/UX",
     tags: ["Figma", "Design Sys.", "Prototyping", "A/B Tests", "Research"],
-    color: "rgba(185,255,75,0.8)",
+    color: "rgba(41,171,226,0.8)",
     number: "04",
   },
   {
     icon: "ri-robot-line",
     title: "AI & ML",
     tags: ["OpenAI", "TensorFlow", "LangChain", "FastAPI", "PyTorch"],
-    color: "rgba(185,255,75,0.8)",
+    color: "rgba(41,171,226,0.8)",
     number: "05",
   },
   {
     icon: "ri-git-branch-line",
     title: "DevOps",
     tags: ["GitHub CI", "Terraform", "Ansible", "Prometheus", "Vault"],
-    color: "rgba(185,255,75,0.8)",
+    color: "rgba(41,171,226,0.8)",
     number: "06",
   },
 ];
@@ -154,7 +154,7 @@ export default function TechStackShelf() {
               rotateY: tiltX,
               transformPerspective: 800,
               transformStyle: "preserve-3d",
-              boxShadow: "0 24px 48px rgba(0,0,0,0.45), 0 0 0 1px rgba(185,255,75,0.06)",
+              boxShadow: "0 24px 48px rgba(0,0,0,0.45), 0 0 0 1px rgba(41,171,226,0.06)",
             }}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
@@ -162,7 +162,7 @@ export default function TechStackShelf() {
             {/* Glow top */}
             <div
               className="absolute top-0 left-0 right-0 h-0.5"
-              style={{ background: "linear-gradient(90deg, transparent, rgba(185,255,75,0.7), transparent)" }}
+              style={{ background: "linear-gradient(90deg, transparent, rgba(41,171,226,0.7), transparent)" }}
             />
 
             {/* Header */}
@@ -260,7 +260,7 @@ export default function TechStackShelf() {
             {/* Subtle bg glow */}
             <div
               className="absolute inset-0 pointer-events-none rounded-2xl"
-              style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(185,255,75,0.04) 0%, transparent 65%)" }}
+              style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(41,171,226,0.04) 0%, transparent 65%)" }}
             />
           </motion.div>
         </motion.div>

@@ -25,7 +25,7 @@ const row1: Badge[] = [
 const row2: Badge[] = [
   { name: "Flutter", icon: "ri-smartphone-line", color: "#54c5f8" },
   { name: "Go", icon: "ri-code-box-line", color: "#00acd7" },
-  { name: "OpenAI", icon: "ri-robot-line", color: "#b9ff4b" },
+  { name: "OpenAI", icon: "ri-robot-line", color: "#29abe2" },
   { name: "LangChain", icon: "ri-links-line", color: "#7cb9e8" },
   { name: "Datadog", icon: "ri-bar-chart-2-line", color: "#632ca6" },
   { name: "Stripe", icon: "ri-bank-card-line", color: "#9d86e9" },
@@ -83,14 +83,14 @@ function TiltBadge({ badge }: { badge: Badge }) {
 
       <div
         className="w-5 h-5 flex items-center justify-center shrink-0 relative z-10 transition-colors duration-200"
-        style={{ color: hovered ? badge.color : "rgba(255,255,255,0.32)" }}
+        style={{ color: hovered ? badge.color : "rgba(255,255,255,0.70)" }}
       >
         <i className={`${badge.icon} text-sm`}></i>
       </div>
 
       <span
         className="text-xs font-medium relative z-10 whitespace-nowrap transition-colors duration-200"
-        style={{ color: hovered ? "rgba(255,255,255,0.85)" : "rgba(255,255,255,0.38)" }}
+        style={{ color: hovered ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.78)" }}
       >
         {badge.name}
       </span>
@@ -119,11 +119,11 @@ function MarqueeRow({
       {/* Edge fades */}
       <div
         className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-        style={{ background: "linear-gradient(to right, #0e0e0e, transparent)" }}
+        style={{ background: "linear-gradient(to right, rgb(12 20 38), transparent)" }}
       />
       <div
         className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-        style={{ background: "linear-gradient(to left, #0e0e0e, transparent)" }}
+        style={{ background: "linear-gradient(to left, rgb(12 20 38), transparent)" }}
       />
 
       <div
@@ -156,18 +156,18 @@ export default function TechBadgesMarquee() {
   const inView = useInView(sectionRef, { once: true, margin: "-80px" });
 
   return (
-    <section ref={sectionRef} className="relative bg-[#0e0e0e] py-16 md:py-20 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-dc-surface py-16 md:py-20 overflow-hidden">
       {/* Top border */}
       <motion.div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: "linear-gradient(to right, transparent, rgba(185,255,75,0.15) 30%, rgba(185,255,75,0.15) 70%, transparent)" }}
+        style={{ background: "linear-gradient(to right, transparent, rgba(41,171,226,0.15) 30%, rgba(41,171,226,0.15) 70%, transparent)" }}
         initial={{ scaleX: 0, opacity: 0 }}
         animate={inView ? { scaleX: 1, opacity: 1 } : {}}
         transition={{ duration: 0.9 }}
       />
       <motion.div
         className="absolute bottom-0 left-0 right-0 h-px"
-        style={{ background: "linear-gradient(to right, transparent, rgba(185,255,75,0.08) 30%, rgba(185,255,75,0.08) 70%, transparent)" }}
+        style={{ background: "linear-gradient(to right, transparent, rgba(41,171,226,0.08) 30%, rgba(41,171,226,0.08) 70%, transparent)" }}
         initial={{ scaleX: 0, opacity: 0 }}
         animate={inView ? { scaleX: 1, opacity: 1 } : {}}
         transition={{ duration: 0.9, delay: 0.1 }}
@@ -176,7 +176,7 @@ export default function TechBadgesMarquee() {
       {/* Ambient glow */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(185,255,75,0.02) 0%, transparent 65%)" }}
+        style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(41,171,226,0.02) 0%, transparent 65%)" }}
       />
 
       {/* Header */}
@@ -186,12 +186,12 @@ export default function TechBadgesMarquee() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <p className="text-white/20 text-xs font-mono tracking-[0.3em] uppercase mb-2">
+        <p className="text-white/50 text-xs font-mono tracking-[0.3em] uppercase mb-2">
           Battle-tested stack
         </p>
-        <h3 className="text-white/60 text-sm md:text-base font-medium">
+        <h3 className="text-white/80 text-sm md:text-base font-medium">
           Technologies we deploy in{" "}
-          <span className="text-[#b9ff4b]">production every day</span>
+          <span className="text-[#29abe2]">production every day</span>
         </h3>
       </motion.div>
 
@@ -218,8 +218,8 @@ export default function TechBadgesMarquee() {
           ["ri-award-line", "23", "Certifications"],
           ["ri-shield-check-line", "SOC2", "Compliant"],
         ].map(([icon, val, label]) => (
-          <div key={label} className="flex items-center gap-2 text-white/25">
-            <i className={`${icon} text-[#b9ff4b]/40 text-sm`}></i>
+          <div key={label} className="flex items-center gap-2 text-white/65">
+            <i className={`${icon} text-[#29abe2]/40 text-sm`}></i>
             <span className="text-white/70 text-sm font-semibold">{val}</span>
             <span className="text-xs">{label}</span>
           </div>

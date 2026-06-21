@@ -230,8 +230,8 @@ function ProcessCTA({ onContact }: { onContact: () => void }) {
             background: "rgba(10,12,16,0.88)",
             backdropFilter: "blur(32px)",
             WebkitBackdropFilter: "blur(32px)",
-            border: "1px solid rgba(185,255,75,0.15)",
-            boxShadow: "0 0 80px rgba(185,255,75,0.06), 0 40px 80px rgba(0,0,0,0.5)",
+            border: "1px solid rgba(41,171,226,0.15)",
+            boxShadow: "0 0 80px rgba(41,171,226,0.06), 0 40px 80px rgba(0,0,0,0.5)",
           }}
         >
           <div className="w-16 h-16 flex items-center justify-center rounded-2xl bg-accent/12 border border-accent/25">

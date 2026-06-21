@@ -52,7 +52,7 @@ const features: Feature[] = [
 const featureCategories = ["Core", "AI", "Data", "Extra"];
 
 const complexityMultipliers: Record<number, { label: string; mult: number; color: string }> = {
-  0: { label: "Simple", mult: 0.85, color: "text-green-400" },
+  0: { label: "Simple", mult: 0.85, color: "text-accent" },
   1: { label: "Medium", mult: 1.0, color: "text-accent" },
   2: { label: "Complex", mult: 1.28, color: "text-orange-400" },
   3: { label: "Enterprise", mult: 1.65, color: "text-red-400" },

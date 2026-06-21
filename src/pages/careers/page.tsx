@@ -179,10 +179,10 @@ export default function CareersPage() {
   const filtered = activeFilter === "All" ? openRoles : openRoles.filter((r) => r.department === activeFilter);
 
   return (
-    <div className="bg-[#0b0a08] min-h-screen">
+    <div className="bg-[#080d1a] min-h-screen">
       {applyRole && <ApplicationModal roleTitle={applyRole} onClose={() => setApplyRole(null)} />}
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-[#0b0a08]/95 backdrop-blur-md border-b border-white/5">
+      <header className="fixed top-0 left-0 w-full z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           <button
             onClick={() => navigate("/")}
@@ -219,7 +219,7 @@ export default function CareersPage() {
             alt="Solutions Studio office culture"
             className="w-full h-full object-cover object-top"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0b0a08]/75 via-[#0b0a08]/65 to-[#0b0a08]"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#080d1a]/75 via-[#080d1a]/65 to-[#080d1a]"></div>
         </div>
         <div className="relative max-w-7xl mx-auto w-full">
           <motion.div
@@ -476,7 +476,7 @@ export default function CareersPage() {
                         </div>
                       </div>
                       <div className="space-y-5">
-                        <div className="bg-[#0b0a08] border border-white/5 rounded-xl p-6">
+                        <div className="bg-[#080d1a] border border-white/5 rounded-xl p-6">
                           <h4 className="text-white font-semibold text-sm mb-4">Quick Facts</h4>
                           <div className="space-y-3">
                             {[

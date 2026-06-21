@@ -95,7 +95,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
       {/* Accent corner flash on hover */}
       <motion.div
         className="absolute top-0 right-0 w-16 h-16 rounded-bl-3xl bg-accent/0 pointer-events-none"
-        whileHover={{ background: "rgba(185,255,75,0.06)" }}
+        whileHover={{ background: "rgba(41,171,226,0.06)" }}
         transition={{ duration: 0.3 }}
       />
 

@@ -285,7 +285,7 @@ export default function CaseStudyPage() {
 
   if (!study) {
     return (
-      <div className="bg-[#0b0a08] min-h-screen flex items-center justify-center">
+      <div className="bg-[#080d1a] min-h-screen flex items-center justify-center">
         <div className="text-center">
           <p className="text-white/40 text-lg mb-4">Case study not found.</p>
           <button onClick={() => navigate("/blog")} className="text-accent hover:underline cursor-pointer">
@@ -297,9 +297,9 @@ export default function CaseStudyPage() {
   }
 
   return (
-    <div className="bg-[#0b0a08] min-h-screen">
+    <div className="bg-[#080d1a] min-h-screen">
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-[#0b0a08]/95 backdrop-blur-md border-b border-white/5">
+      <header className="fixed top-0 left-0 w-full z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           <button
             onClick={() => navigate("/blog")}
@@ -372,7 +372,7 @@ export default function CaseStudyPage() {
           {study.results.map((result, i) => (
             <motion.div
               key={result.label}
-              className="bg-[#161310] border border-white/5 rounded-2xl p-6 text-center"
+              className="bg-[#0f1c36] border border-white/5 rounded-2xl p-6 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -462,7 +462,7 @@ export default function CaseStudyPage() {
 
             {/* Quote */}
             <motion.blockquote
-              className="bg-[#1e1a14] border-l-2 border-accent rounded-r-2xl p-8"
+              className="bg-[#152542] border-l-2 border-accent rounded-r-2xl p-8"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -485,7 +485,7 @@ export default function CaseStudyPage() {
           <div className="flex flex-col gap-6">
             {/* Client Info */}
             <motion.div
-              className="bg-[#161310] border border-white/5 rounded-2xl p-6"
+              className="bg-[#0f1c36] border border-white/5 rounded-2xl p-6"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -510,7 +510,7 @@ export default function CaseStudyPage() {
 
             {/* Tech Stack */}
             <motion.div
-              className="bg-[#161310] border border-white/5 rounded-2xl p-6"
+              className="bg-[#0f1c36] border border-white/5 rounded-2xl p-6"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -567,7 +567,7 @@ export default function CaseStudyPage() {
             </div>
             <button
               onClick={() => navigate(`/case-study/${study.nextSlug}`)}
-              className="flex items-center gap-2 bg-[#161310] border border-white/10 text-white font-medium px-6 py-3 rounded-full hover:border-accent hover:text-accent transition-colors duration-300 cursor-pointer whitespace-nowrap text-sm"
+              className="flex items-center gap-2 bg-[#0f1c36] border border-white/10 text-white font-medium px-6 py-3 rounded-full hover:border-accent hover:text-accent transition-colors duration-300 cursor-pointer whitespace-nowrap text-sm"
             >
               Read Next <i className="ri-arrow-right-line"></i>
             </button>

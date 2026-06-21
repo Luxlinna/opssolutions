@@ -130,7 +130,7 @@ export default function CloudSyncFragmentImage({ triggered = false, hovered = fa
           initial={{ opacity: 0 }}
           animate={{ opacity: [0, 0.8, 0] }}
           transition={{ duration: 1.0, ease: "easeOut" }}
-          style={{ boxShadow: "inset 0 0 50px 10px rgba(185,255,75,0.3)" }}
+          style={{ boxShadow: "inset 0 0 50px 10px rgba(41,171,226,0.3)" }}
         />
       )}
 
@@ -142,7 +142,7 @@ export default function CloudSyncFragmentImage({ triggered = false, hovered = fa
           initial={{ opacity: 0.9, scale: 0.94 }}
           animate={{ opacity: 0, scale: 1.07 }}
           transition={{ duration: 0.38, ease: "easeOut" }}
-          style={{ boxShadow: "0 0 0 2px rgba(185,255,75,0.8), 0 0 40px rgba(185,255,75,0.25)" }}
+          style={{ boxShadow: "0 0 0 2px rgba(41,171,226,0.8), 0 0 40px rgba(41,171,226,0.25)" }}
         />
       )}
 
@@ -269,7 +269,7 @@ export default function CloudSyncFragmentImage({ triggered = false, hovered = fa
               style={{
                 left: `${((n + 1) / COLS) * 100}%`,
                 width: "1px",
-                background: "rgba(185,255,75,0.5)",
+                background: "rgba(41,171,226,0.5)",
               }}
               animate={{ opacity: [0, 1, 0] }}
               transition={{
@@ -285,7 +285,7 @@ export default function CloudSyncFragmentImage({ triggered = false, hovered = fa
               style={{
                 top: `${((n + 1) / ROWS) * 100}%`,
                 height: "1px",
-                background: "rgba(185,255,75,0.5)",
+                background: "rgba(41,171,226,0.5)",
               }}
               animate={{ opacity: [0, 1, 0] }}
               transition={{
@@ -304,7 +304,7 @@ export default function CloudSyncFragmentImage({ triggered = false, hovered = fa
           style={{
             height: "2px",
             background:
-              "linear-gradient(90deg, transparent 0%, rgba(185,255,75,0.9) 50%, transparent 100%)",
+              "linear-gradient(90deg, transparent 0%, rgba(41,171,226,0.9) 50%, transparent 100%)",
           }}
           initial={{ top: "100%", opacity: 0 }}
           animate={{ top: ["-2%", "102%"], opacity: [0, 1, 1, 0] }}
@@ -324,7 +324,7 @@ export default function CloudSyncFragmentImage({ triggered = false, hovered = fa
           style={{
             height: "2px",
             background:
-              "linear-gradient(90deg, transparent 0%, rgba(185,255,75,0.7) 50%, transparent 100%)",
+              "linear-gradient(90deg, transparent 0%, rgba(41,171,226,0.7) 50%, transparent 100%)",
           }}
           initial={{ top: "-2%", opacity: 0 }}
           animate={{ top: ["-2%", "102%"], opacity: [0, 0.8, 0.8, 0] }}

@@ -62,7 +62,7 @@ export default function FloatingBookCTA() {
                 exit={{ opacity: 0, y: 10, scale: 0.95 }}
                 transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
                 className="bg-dc-bg border border-dc-text/15 rounded-2xl p-5 w-72"
-                style={{ boxShadow: "0 24px 64px rgba(0,0,0,0.45), 0 0 0 1px rgba(185,255,75,0.1)" }}
+                style={{ boxShadow: "0 24px 64px rgba(0,0,0,0.45), 0 0 0 1px rgba(41,171,226,0.1)" }}
               >
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">
@@ -138,7 +138,7 @@ export default function FloatingBookCTA() {
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
               className="flex items-center gap-2.5 bg-accent text-black font-bold text-sm px-5 py-3 rounded-full cursor-pointer whitespace-nowrap"
-              style={{ boxShadow: "0 8px 32px rgba(185,255,75,0.3), 0 2px 8px rgba(0,0,0,0.3)" }}
+              style={{ boxShadow: "0 8px 32px rgba(41,171,226,0.3), 0 2px 8px rgba(0,0,0,0.3)" }}
             >
               <motion.span
                 className="w-2 h-2 rounded-full bg-black/30"

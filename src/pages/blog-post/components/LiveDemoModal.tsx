@@ -86,13 +86,13 @@ function TickerStrip({ isOpen }: { isOpen: boolean }) {
               <span className="text-white/35 text-[9px] font-mono tracking-wide">{tk.pair}</span>
               <span
                 key={`${i}-${tk.flip}`}
-                className={`text-[9px] font-mono font-semibold ${tk.up ? "text-emerald-400" : "text-red-400"}`}
+                className={`text-[9px] font-mono font-semibold ${tk.up ? "text-accent" : "text-red-400"}`}
                 style={{ animation: "ldm-price-flip 0.35s ease-out" }}
               >
                 {tk.price.toLocaleString("en-US", { minimumFractionDigits: tk.dp, maximumFractionDigits: tk.dp })}
               </span>
               <div className={`flex items-center justify-center w-3 h-3`}>
-                <i className={`${tk.up ? "ri-arrow-up-s-fill text-emerald-400" : "ri-arrow-down-s-fill text-red-400"} text-[9px]`} />
+                <i className={`${tk.up ? "ri-arrow-up-s-fill text-accent" : "ri-arrow-down-s-fill text-red-400"} text-[9px]`} />
               </div>
             </div>
           ))}
@@ -177,7 +177,7 @@ function ChartCanvas({ tf }: { tf: TF }) {
       cs.forEach((c, i) => {
         const x    = cw * (i + 1);
         const bull = c.c >= c.o;
-        const col  = bull ? "#22c55e" : "#ef4444";
+        const col  = bull ? "#29abe2" : "#ef4444";
         const isL  = i === n - 1;
         const pct  = isL ? Math.min(1, (tick % 80) / 40) : 1;
 
@@ -203,7 +203,7 @@ function ChartCanvas({ tf }: { tf: TF }) {
 
       // EMA
       ctx.beginPath(); ctx.strokeStyle = "rgba(74,222,128,0.55)"; ctx.lineWidth = 1.5;
-      ctx.shadowColor = "#4ade80"; ctx.shadowBlur = 5;
+      ctx.shadowColor = "#29abe2"; ctx.shadowBlur = 5;
       cs.forEach((c, i) => { const x = cw*(i+1); i===0 ? ctx.moveTo(x,py((c.o+c.c)/2)) : ctx.lineTo(x,py((c.o+c.c)/2)); });
       ctx.stroke(); ctx.shadowBlur = 0;
 
@@ -307,8 +307,8 @@ export default function LiveDemoModal({ isOpen, onClose }: Props) {
             {/* Header */}
             <div className="flex items-center justify-between px-5 py-3 border-b border-white/5 shrink-0">
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" style={{ boxShadow: "0 0 6px #4ade80" }} />
-                <span className="text-emerald-400/80 text-xs font-mono tracking-widest">FINANCEFLOW · LIVE DEMO</span>
+                <div className="w-2 h-2 rounded-full bg-accent animate-pulse" style={{ boxShadow: "0 0 6px #29abe2" }} />
+                <span className="text-accent/80 text-xs font-mono tracking-widest">FINANCEFLOW · LIVE DEMO</span>
                 <span className="text-white/15 text-xs">|</span>
                 {pairs.map((pair, i) => (
                   <button
@@ -330,13 +330,13 @@ export default function LiveDemoModal({ isOpen, onClose }: Props) {
                   <span
                     className="text-lg font-mono font-extrabold"
                     style={{
-                      color: up ? "#4ade80" : "#f87171",
+                      color: up ? "#29abe2" : "#f87171",
                       textShadow: up ? "0 0 14px rgba(74,222,128,0.55)" : "0 0 14px rgba(248,113,113,0.55)",
                     }}
                   >
                     {price.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </span>
-                  <span className={`ml-2 text-xs font-mono ${up ? "text-emerald-400" : "text-red-400"}`}>
+                  <span className={`ml-2 text-xs font-mono ${up ? "text-accent" : "text-red-400"}`}>
                     {up ? "+1.24%" : "-0.58%"}
                   </span>
                 </div>
@@ -362,7 +362,7 @@ export default function LiveDemoModal({ isOpen, onClose }: Props) {
                       onClick={() => setTf(t)}
                       className={`text-[11px] font-mono px-2.5 py-1 rounded transition-all cursor-pointer whitespace-nowrap ${
                         tf === t
-                          ? "bg-emerald-400/10 text-emerald-400 border border-emerald-400/25"
+                          ? "bg-accent/10 text-accent border border-accent/25"
                           : "text-white/30 hover:text-white/60"
                       }`}
                     >
@@ -371,7 +371,7 @@ export default function LiveDemoModal({ isOpen, onClose }: Props) {
                   ))}
                   <div className="ml-auto flex items-center gap-3 text-[10px] font-mono">
                     <span className="text-amber-400/50">BB(20,2)</span>
-                    <span className="text-emerald-400/50">EMA(9)</span>
+                    <span className="text-accent/50">EMA(9)</span>
                     <span className="text-white/20">VOL</span>
                     <span className="text-white/15">|</span>
                     <span className="text-red-400/50 animate-pulse">● LIVE</span>
@@ -420,7 +420,7 @@ export default function LiveDemoModal({ isOpen, onClose }: Props) {
                           className="absolute inset-y-0 left-0 rounded-sm"
                           style={{ width: `${depth}%`, background: "rgba(34,197,94,0.08)" }}
                         />
-                        <span className="text-emerald-400/60 text-[8px] font-mono flex-1 relative z-10">{p}</span>
+                        <span className="text-accent/60 text-[8px] font-mono flex-1 relative z-10">{p}</span>
                         <span className="text-white/22 text-[8px] font-mono relative z-10">{v}</span>
                       </div>
                     ))}
@@ -455,7 +455,7 @@ export default function LiveDemoModal({ isOpen, onClose }: Props) {
                 <span
                   className="text-xs font-mono font-bold"
                   style={{
-                    color: parseFloat(pnl) >= 0 ? "#4ade80" : "#f87171",
+                    color: parseFloat(pnl) >= 0 ? "#29abe2" : "#f87171",
                     textShadow: parseFloat(pnl) >= 0
                       ? "0 0 8px rgba(74,222,128,0.4)"
                       : "0 0 8px rgba(248,113,113,0.4)",
@@ -474,7 +474,7 @@ export default function LiveDemoModal({ isOpen, onClose }: Props) {
               </div>
               <div className="ml-auto flex items-center gap-2">
                 <span className="text-white/18 text-[9px] font-mono">DEMO · Solutions Studio</span>
-                <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" style={{ boxShadow: "0 0 4px #4ade80", animation: "pulse 2s ease-in-out infinite" }} />
+                <div className="w-1.5 h-1.5 rounded-full bg-accent" style={{ boxShadow: "0 0 4px #29abe2", animation: "pulse 2s ease-in-out infinite" }} />
               </div>
             </div>
           </motion.div>

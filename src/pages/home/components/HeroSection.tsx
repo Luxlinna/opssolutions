@@ -215,7 +215,7 @@ export default function HeroSection() {
           className="w-20 h-20 rounded-full bg-accent/5"
           animate={{ scale: [1, 1.25, 1] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-          style={{ boxShadow: "0 0 30px 8px rgba(185,255,75,0.07)" }}
+          style={{ boxShadow: "0 0 30px 8px rgba(41,171,226,0.07)" }}
         />
       </motion.div>
 
@@ -233,7 +233,7 @@ export default function HeroSection() {
           depthFactor={1.4}
         >
           <div className="w-60 bg-[#0d1117]/95 border border-accent/25 rounded-2xl p-4 shadow-2xl"
-            style={{ boxShadow: "0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(185,255,75,0.12), inset 0 1px 0 rgba(255,255,255,0.04)" }}>
+            style={{ boxShadow: "0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(41,171,226,0.12), inset 0 1px 0 rgba(255,255,255,0.04)" }}>
             <div className="flex items-center gap-1.5 mb-3">
               <span className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
               <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
@@ -251,13 +251,13 @@ export default function HeroSection() {
               <span className="text-white/40">{"  "}</span>
               <span className="text-orange-300">stack</span>
               <span className="text-white/40">: </span>
-              <span className="text-green-400">&quot;React&quot;</span>
+              <span className="text-accent">&quot;React&quot;</span>
               <span className="text-white/40">,</span>
               {"\n"}
               <span className="text-white/40">{"  "}</span>
               <span className="text-orange-300">deploy</span>
               <span className="text-white/40">: </span>
-              <span className="text-green-400">&quot;AWS&quot;</span>
+              <span className="text-accent">&quot;AWS&quot;</span>
               {"\n"}
               <span className="text-white/40">{"});"}</span>
               {"\n"}
@@ -277,11 +277,11 @@ export default function HeroSection() {
           depthFactor={2.2}
         >
           <div className="bg-dc-card/95 border border-accent/30 rounded-2xl px-5 py-4 flex items-center gap-4 shadow-2xl"
-            style={{ boxShadow: "0 20px 50px rgba(0,0,0,0.45), 0 0 0 1px rgba(185,255,75,0.15), inset 0 1px 0 rgba(255,255,255,0.05)" }}>
+            style={{ boxShadow: "0 20px 50px rgba(0,0,0,0.45), 0 0 0 1px rgba(41,171,226,0.15), inset 0 1px 0 rgba(255,255,255,0.05)" }}>
             <div className="relative w-12 h-12 shrink-0">
               <svg viewBox="0 0 36 36" className="w-12 h-12 -rotate-90">
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(185,255,75,0.1)" strokeWidth="3" />
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#b9ff4b" strokeWidth="3"
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(41,171,226,0.1)" strokeWidth="3" />
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#29abe2" strokeWidth="3"
                   strokeDasharray="92 100" strokeLinecap="round" />
               </svg>
               <span className="absolute inset-0 flex items-center justify-center text-accent text-xs font-bold">98</span>
@@ -376,7 +376,7 @@ export default function HeroSection() {
           depthFactor={3}
         >
           <div className="w-6 h-6 rounded-full bg-accent/60"
-            style={{ boxShadow: "0 0 20px 8px rgba(185,255,75,0.25), 0 0 40px 16px rgba(185,255,75,0.1)" }} />
+            style={{ boxShadow: "0 0 20px 8px rgba(41,171,226,0.25), 0 0 40px 16px rgba(41,171,226,0.1)" }} />
         </FloatingCard>
 
         {/* Floating geometric accent — small dot cluster */}
@@ -431,7 +431,7 @@ export default function HeroSection() {
               <motion.span
                 variants={wordVariants}
                 className="inline-block"
-                style={{ color: i === 2 || i === 5 ? "#b9ff4b" : "white" }}
+                style={{ color: i === 2 || i === 5 ? "#29abe2" : "white" }}
               >
                 {word}
               </motion.span>

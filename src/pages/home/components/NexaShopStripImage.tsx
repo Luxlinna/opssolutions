@@ -79,7 +79,7 @@ export default function NexaShopStripImage({ triggered = false }: Props) {
               style={{
                 left: `calc(${x}% - 1px)`,
                 width: "1.5px",
-                background: "rgba(185,255,75,0.6)",
+                background: "rgba(41,171,226,0.6)",
                 transform: `skewX(-${Math.atan(DIAG / 50) * (180 / Math.PI)}deg)`,
                 transformOrigin: "center",
               }}
@@ -101,7 +101,7 @@ export default function NexaShopStripImage({ triggered = false }: Props) {
           style={{
             height: "2px",
             background:
-              "linear-gradient(90deg, transparent 0%, rgba(185,255,75,0.85) 50%, transparent 100%)",
+              "linear-gradient(90deg, transparent 0%, rgba(41,171,226,0.85) 50%, transparent 100%)",
           }}
           initial={{ top: "100%", opacity: 0 }}
           animate={{ top: ["-2%", "102%"], opacity: [0, 1, 1, 0] }}

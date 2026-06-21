@@ -138,7 +138,7 @@ export default function BlogMobileNav({ post }: Props) {
 
       {/* ── Bottom nav bar ────────────────────────────────────────────────── */}
       <motion.div
-        className="flex items-center gap-3 px-4 py-3 bg-[#0b0a08]/97 backdrop-blur-md border-t border-white/5"
+        className="flex items-center gap-3 px-4 py-3 bg-[#080d1a]/97 backdrop-blur-md border-t border-white/5"
         initial={{ y: 80, opacity: 0 }}
         animate={{ y: hasScrolled ? 0 : 80, opacity: hasScrolled ? 1 : 0 }}
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}

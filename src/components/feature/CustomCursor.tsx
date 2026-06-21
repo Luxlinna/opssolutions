@@ -21,8 +21,6 @@ const CARD_SELECTORS = [
   "article",
 ];
 
-const TEXT_SELECTORS = ["p", "h1", "h2", "h3", "h4", "h5", "h6", "span", "[data-cursor='text']"];
-
 function getState(target: Element | null): CursorState {
   if (!target) return "default";
   const el = target as HTMLElement;
@@ -37,35 +35,35 @@ function getState(target: Element | null): CursorState {
 }
 
 const ringSize: Record<CursorState, number> = {
-  default: 36,
-  pointer: 52,
-  card: 64,
-  text: 2,
-  drag: 72,
+  default: 40,
+  pointer: 56,
+  card: 68,
+  text: 4,
+  drag: 76,
 };
 
 const ringOpacity: Record<CursorState, number> = {
-  default: 0.55,
-  pointer: 0.85,
-  card: 0.4,
-  text: 0.8,
-  drag: 0.6,
+  default: 0.85,
+  pointer: 1,
+  card: 0.7,
+  text: 0.9,
+  drag: 0.8,
 };
 
 const ringBg: Record<CursorState, string> = {
   default: "transparent",
-  pointer: "rgba(185,255,75,0.12)",
-  card: "rgba(185,255,75,0.06)",
+  pointer: "rgba(41,171,226,0.15)",
+  card: "rgba(41,171,226,0.1)",
   text: "transparent",
-  drag: "rgba(185,255,75,0.1)",
+  drag: "rgba(41,171,226,0.12)",
 };
 
 const dotSize: Record<CursorState, number> = {
-  default: 6,
-  pointer: 4,
-  card: 5,
-  text: 2,
-  drag: 4,
+  default: 10,
+  pointer: 6,
+  card: 8,
+  text: 3,
+  drag: 6,
 };
 
 const cursorLabel: Record<CursorState, string | null> = {
@@ -149,10 +147,10 @@ export default function CustomCursor() {
           background: ringBg[cursorState],
           scale: isClicking ? 0.75 : 1,
           borderColor: cursorState === "pointer"
-            ? "rgba(185,255,75,0.9)"
+            ? "rgba(41,171,226,0.9)"
             : cursorState === "card"
-            ? "rgba(185,255,75,0.5)"
-            : "rgba(185,255,75,0.6)",
+            ? "rgba(41,171,226,0.5)"
+            : "rgba(41,171,226,0.6)",
           borderWidth: cursorState === "card" ? "1.5px" : "1px",
         }}
         animate={{
@@ -192,6 +190,7 @@ export default function CustomCursor() {
           translateX: "-50%",
           translateY: "-50%",
           opacity: isVisible ? (cursorState === "card" ? 0.9 : 1) : 0,
+          boxShadow: "0 0 8px 2px rgba(41,171,226,0.7), 0 0 16px 4px rgba(41,171,226,0.3)",
         }}
         animate={{ width: dSize, height: dSize }}
         transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}

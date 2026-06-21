@@ -89,7 +89,7 @@ function renderBlock(block: ContentBlock, idx: number) {
       const variants = {
         info: { bg: "bg-accent/8", border: "border-accent/20", icon: "ri-information-line", iconColor: "text-accent", titleColor: "text-accent" },
         warning: { bg: "bg-amber-500/8", border: "border-amber-500/20", icon: "ri-alert-line", iconColor: "text-amber-400", titleColor: "text-amber-400" },
-        success: { bg: "bg-emerald-500/8", border: "border-emerald-500/20", icon: "ri-checkbox-circle-line", iconColor: "text-emerald-400", titleColor: "text-emerald-400" },
+        success: { bg: "bg-accent/8", border: "border-accent/20", icon: "ri-checkbox-circle-line", iconColor: "text-accent", titleColor: "text-accent" },
         tip: { bg: "bg-violet-500/8", border: "border-violet-500/20", icon: "ri-lightbulb-flash-line", iconColor: "text-violet-400", titleColor: "text-violet-400" },
       };
       const v = variants[block.variant];
@@ -301,11 +301,11 @@ export default function ArticleLayout({ post }: Props) {
   }, [post.slug]);
 
   return (
-    <div className="bg-[#0b0a08] min-h-screen pb-20 md:pb-0">
+    <div className="bg-[#080d1a] min-h-screen pb-20 md:pb-0">
       <ReadingProgress />
 
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-[#0b0a08]/95 backdrop-blur-md border-b border-white/5">
+      <header className="fixed top-0 left-0 w-full z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           <button
             onClick={() => navigate("/blog")}
@@ -336,7 +336,7 @@ export default function ArticleLayout({ post }: Props) {
                   <circle
                     cx="8" cy="8" r="6"
                     fill="none"
-                    stroke="rgba(185,255,75,0.7)"
+                    stroke="rgba(41,171,226,0.7)"
                     strokeWidth="1.5"
                     strokeDasharray={`${2 * Math.PI * 6}`}
                     strokeDashoffset={`${2 * Math.PI * 6 * (1 - readProgress)}`}
@@ -451,15 +451,15 @@ export default function ArticleLayout({ post }: Props) {
               <>
                 <HeroBadge
                   posClass="top-4 left-4"
-                  icon="ri-line-chart-line" iconBg="bg-emerald-500/20" iconColor="text-emerald-400"
+                  icon="ri-line-chart-line" iconBg="bg-accent/20" iconColor="text-accent"
                   label="Daily Volume" value="$2M+"
                   delay={0.5} initX={-20} initY={-8}
                 />
                 <HeroBadge
                   posClass="top-4 right-4"
-                  icon="ri-shield-check-line" iconBg="bg-[#b9ff4b]/15" iconColor="text-[#b9ff4b]"
+                  icon="ri-shield-check-line" iconBg="bg-[#29abe2]/15" iconColor="text-[#29abe2]"
                   label="Platform Uptime" value="99.99%"
-                  valueColor="text-[#b9ff4b]" borderClass="border-[#b9ff4b]/20"
+                  valueColor="text-[#29abe2]" borderClass="border-[#29abe2]/20"
                   delay={0.7} initX={20} initY={-8}
                 />
                 <motion.div
@@ -470,12 +470,12 @@ export default function ArticleLayout({ post }: Props) {
                 >
                   <button
                     onClick={() => setShowDemo(true)}
-                    className="relative flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/45 text-emerald-400 text-sm font-bold px-4 py-2 rounded-full backdrop-blur-sm hover:bg-emerald-500/32 hover:border-emerald-400/70 transition-all cursor-pointer whitespace-nowrap"
+                    className="relative flex items-center gap-2 bg-accent/20 border border-accent/45 text-accent text-sm font-bold px-4 py-2 rounded-full backdrop-blur-sm hover:bg-accent/32 hover:border-accent/70 transition-all cursor-pointer whitespace-nowrap"
                     style={{ boxShadow: "0 0 16px rgba(74,222,128,0.25)" }}
                   >
                     <span className="relative flex items-center justify-center w-2 h-2">
-                      <span className="absolute inline-flex w-full h-full rounded-full bg-emerald-400 opacity-75 animate-ping" />
-                      <span className="relative inline-flex w-2 h-2 rounded-full bg-emerald-400" />
+                      <span className="absolute inline-flex w-full h-full rounded-full bg-accent opacity-75 animate-ping" />
+                      <span className="relative inline-flex w-2 h-2 rounded-full bg-accent" />
                     </span>
                     Launch Live Demo
                   </button>
@@ -494,16 +494,16 @@ export default function ArticleLayout({ post }: Props) {
                 />
                 <HeroBadge
                   posClass="bottom-4 left-4"
-                  icon="ri-money-dollar-circle-line" iconBg="bg-emerald-500/20" iconColor="text-emerald-400"
+                  icon="ri-money-dollar-circle-line" iconBg="bg-accent/20" iconColor="text-accent"
                   label="Annual GPU Saving" value="$2.3M / yr"
                   delay={0.7} initX={-20}
                 />
                 <HeroBadge
                   posClass="bottom-4 right-4"
-                  icon="ri-cpu-line" iconBg="bg-[#b9ff4b]/20" iconColor="text-[#b9ff4b]"
+                  icon="ri-cpu-line" iconBg="bg-[#29abe2]/20" iconColor="text-[#29abe2]"
                   label="GPU Utilization" value="23% → 71%"
-                  valueColor="text-[#b9ff4b]" borderClass="border-[#b9ff4b]/25"
-                  glowStyle={{ boxShadow: "0 0 20px rgba(185,255,75,0.12)" }}
+                  valueColor="text-[#29abe2]" borderClass="border-[#29abe2]/25"
+                  glowStyle={{ boxShadow: "0 0 20px rgba(41,171,226,0.12)" }}
                   delay={0.9} initX={20} pulse
                 />
               </>
@@ -526,10 +526,10 @@ export default function ArticleLayout({ post }: Props) {
                 />
                 <HeroBadge
                   posClass="bottom-4 right-4"
-                  icon="ri-shield-check-line" iconBg="bg-[#b9ff4b]/20" iconColor="text-[#b9ff4b]"
+                  icon="ri-shield-check-line" iconBg="bg-[#29abe2]/20" iconColor="text-[#29abe2]"
                   label="Crash Reduction" value="−92%"
-                  valueColor="text-[#b9ff4b]" borderClass="border-[#b9ff4b]/25"
-                  glowStyle={{ boxShadow: "0 0 20px rgba(185,255,75,0.12)" }}
+                  valueColor="text-[#29abe2]" borderClass="border-[#29abe2]/25"
+                  glowStyle={{ boxShadow: "0 0 20px rgba(41,171,226,0.12)" }}
                   delay={0.9} initX={20} pulse
                 />
               </>
@@ -552,10 +552,10 @@ export default function ArticleLayout({ post }: Props) {
                 />
                 <HeroBadge
                   posClass="bottom-4 right-4"
-                  icon="ri-check-double-line" iconBg="bg-[#b9ff4b]/20" iconColor="text-[#b9ff4b]"
+                  icon="ri-check-double-line" iconBg="bg-[#29abe2]/20" iconColor="text-[#29abe2]"
                   label="Brand Accuracy" value="96.3%"
-                  valueColor="text-[#b9ff4b]" borderClass="border-[#b9ff4b]/25"
-                  glowStyle={{ boxShadow: "0 0 20px rgba(185,255,75,0.12)" }}
+                  valueColor="text-[#29abe2]" borderClass="border-[#29abe2]/25"
+                  glowStyle={{ boxShadow: "0 0 20px rgba(41,171,226,0.12)" }}
                   delay={0.9} initX={20} pulse
                 />
               </>
@@ -566,7 +566,7 @@ export default function ArticleLayout({ post }: Props) {
               <>
                 <HeroBadge
                   posClass="top-4 left-4"
-                  icon="ri-time-line" iconBg="bg-emerald-500/20" iconColor="text-emerald-400"
+                  icon="ri-time-line" iconBg="bg-accent/20" iconColor="text-accent"
                   label="Migration Downtime" value="0 Seconds"
                   delay={0.5} initX={-20} initY={-8}
                 />
@@ -578,10 +578,10 @@ export default function ArticleLayout({ post }: Props) {
                 />
                 <HeroBadge
                   posClass="bottom-4 right-4"
-                  icon="ri-alarm-warning-line" iconBg="bg-[#b9ff4b]/20" iconColor="text-[#b9ff4b]"
+                  icon="ri-alarm-warning-line" iconBg="bg-[#29abe2]/20" iconColor="text-[#29abe2]"
                   label="Fewer Incidents" value="−78%"
-                  valueColor="text-[#b9ff4b]" borderClass="border-[#b9ff4b]/25"
-                  glowStyle={{ boxShadow: "0 0 20px rgba(185,255,75,0.12)" }}
+                  valueColor="text-[#29abe2]" borderClass="border-[#29abe2]/25"
+                  glowStyle={{ boxShadow: "0 0 20px rgba(41,171,226,0.12)" }}
                   delay={0.9} initX={20} pulse
                 />
               </>
@@ -592,7 +592,7 @@ export default function ArticleLayout({ post }: Props) {
               <>
                 <HeroBadge
                   posClass="top-4 left-4"
-                  icon="ri-apple-line" iconBg="bg-[#b9ff4b]/15" iconColor="text-[#b9ff4b]"
+                  icon="ri-apple-line" iconBg="bg-[#29abe2]/15" iconColor="text-[#29abe2]"
                   label="App Store" value="Top 42 Health"
                   delay={0.5} initX={-20} initY={-8}
                 />
@@ -604,10 +604,10 @@ export default function ArticleLayout({ post }: Props) {
                 />
                 <HeroBadge
                   posClass="bottom-4 right-4"
-                  icon="ri-rocket-2-line" iconBg="bg-[#b9ff4b]/20" iconColor="text-[#b9ff4b]"
+                  icon="ri-rocket-2-line" iconBg="bg-[#29abe2]/20" iconColor="text-[#29abe2]"
                   label="Shipped In" value="87 Days"
-                  valueColor="text-[#b9ff4b]" borderClass="border-[#b9ff4b]/25"
-                  glowStyle={{ boxShadow: "0 0 20px rgba(185,255,75,0.12)" }}
+                  valueColor="text-[#29abe2]" borderClass="border-[#29abe2]/25"
+                  glowStyle={{ boxShadow: "0 0 20px rgba(41,171,226,0.12)" }}
                   delay={0.9} initX={20} pulse
                 />
               </>
@@ -630,10 +630,10 @@ export default function ArticleLayout({ post }: Props) {
                 />
                 <HeroBadge
                   posClass="bottom-4 right-4"
-                  icon="ri-funds-line" iconBg="bg-[#b9ff4b]/20" iconColor="text-[#b9ff4b]"
+                  icon="ri-funds-line" iconBg="bg-[#29abe2]/20" iconColor="text-[#29abe2]"
                   label="Series A Raised" value="$4M Closed"
-                  valueColor="text-[#b9ff4b]" borderClass="border-[#b9ff4b]/25"
-                  glowStyle={{ boxShadow: "0 0 20px rgba(185,255,75,0.12)" }}
+                  valueColor="text-[#29abe2]" borderClass="border-[#29abe2]/25"
+                  glowStyle={{ boxShadow: "0 0 20px rgba(41,171,226,0.12)" }}
                   delay={0.9} initX={20} pulse
                 />
               </>

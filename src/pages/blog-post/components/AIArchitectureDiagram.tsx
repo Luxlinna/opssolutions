@@ -16,7 +16,7 @@ const NODES = [
   },
   {
     id: "ray", label: "Ray Train", sub: "8× A100 · DDP",
-    icon: "ri-cpu-line", accent: "#22c55e",
+    icon: "ri-cpu-line", accent: "#29abe2",
     cx: 260, cy: 125, metrics: "7B params", status: "training",
   },
   {
@@ -26,7 +26,7 @@ const NODES = [
   },
   {
     id: "triton", label: "Triton Server", sub: "TensorRT INT8 · Batch",
-    icon: "ri-flashlight-line", accent: "#22c55e",
+    icon: "ri-flashlight-line", accent: "#29abe2",
     cx: 770, cy: 235, metrics: "48ms p95", status: "serving",
   },
   {
@@ -36,7 +36,7 @@ const NODES = [
   },
   {
     id: "api", label: "API Gateway", sub: "REST · gRPC · CDN",
-    icon: "ri-global-line", accent: "#22c55e",
+    icon: "ri-global-line", accent: "#29abe2",
     cx: 705, cy: 395, metrics: "99.97% uptime", status: "live",
   },
 ];
@@ -45,11 +45,11 @@ const NODES = [
 // Path coordinates: from card edge → to card edge (SVG 900×500 space)
 const CONNECTIONS = [
   { id: "d-r",  path: "M 148,235 C 180,220 185,148 195,125", color: "#f59e0b", label: "raw features", dur: 2.6, begin: 0.0 },
-  { id: "r-m",  path: "M 325,125 C 375,112 410,112 450,125", color: "#22c55e", label: "artifacts",     dur: 2.2, begin: 0.4 },
+  { id: "r-m",  path: "M 325,125 C 375,112 410,112 450,125", color: "#29abe2", label: "artifacts",     dur: 2.2, begin: 0.4 },
   { id: "m-t",  path: "M 580,125 C 636,125 685,200 705,235", color: "#f97316", label: "model v2.4",   dur: 2.0, begin: 0.8 },
-  { id: "t-a",  path: "M 770,269 C 770,322 740,361 705,361", color: "#22c55e", label: "inference",    dur: 1.8, begin: 0.2 },
+  { id: "t-a",  path: "M 770,269 C 770,322 740,361 705,361", color: "#29abe2", label: "inference",    dur: 1.8, begin: 0.2 },
   { id: "f-r",  path: "M 325,395 C 215,390 205,215 260,159", color: "#f59e0b", label: "train feats",  dur: 3.2, begin: 0.6, dashed: true },
-  { id: "t-f",  path: "M 770,269 C 810,340 565,400 455,395", color: "#22c55e", label: "feedback",     dur: 3.4, begin: 1.2, dashed: true },
+  { id: "t-f",  path: "M 770,269 C 810,340 565,400 455,395", color: "#29abe2", label: "feedback",     dur: 3.4, begin: 1.2, dashed: true },
   { id: "d-f",  path: "M 83,269 C 83,345 225,395 325,395",   color: "#f59e0b", label: "offline",      dur: 2.9, begin: 0.9 },
 ];
 
@@ -215,7 +215,7 @@ export default function AIArchitectureDiagram() {
           <div className="flex items-center gap-1.5">
             <span
               className="inline-block w-1.5 h-1.5 rounded-full bg-accent"
-              style={{ boxShadow: "0 0 5px #22c55e", animation: "nodePulse 1.4s ease-in-out infinite" }}
+              style={{ boxShadow: "0 0 5px #29abe2", animation: "nodePulse 1.4s ease-in-out infinite" }}
             />
             <span className="text-accent text-[10px] font-mono">LIVE</span>
           </div>
@@ -411,11 +411,11 @@ export default function AIArchitectureDiagram() {
             >
               {[
                 { label: "INGESTION", x: "3%",  y: "5%",  color: "#f59e0b" },
-                { label: "TRAINING",  x: "22%", y: "5%",  color: "#22c55e" },
+                { label: "TRAINING",  x: "22%", y: "5%",  color: "#29abe2" },
                 { label: "REGISTRY",  x: "46%", y: "5%",  color: "#f97316" },
-                { label: "SERVING",   x: "71%", y: "5%",  color: "#22c55e" },
+                { label: "SERVING",   x: "71%", y: "5%",  color: "#29abe2" },
                 { label: "FEATURES",  x: "33%", y: "87%", color: "#f59e0b" },
-                { label: "GATEWAY",   x: "63%", y: "87%", color: "#22c55e" },
+                { label: "GATEWAY",   x: "63%", y: "87%", color: "#29abe2" },
               ].map(l => (
                 <span
                   key={l.label}
@@ -450,7 +450,7 @@ export default function AIArchitectureDiagram() {
           <span className="text-[9px] font-mono text-white/30">feedback loop</span>
         </div>
         <div className="flex items-center gap-1.5">
-          <div className="w-2 h-2 rounded-full bg-accent/60" style={{ boxShadow: "0 0 4px #22c55e" }} />
+          <div className="w-2 h-2 rounded-full bg-accent/60" style={{ boxShadow: "0 0 4px #29abe2" }} />
           <span className="text-[9px] font-mono text-white/30">live packet</span>
         </div>
         <div className="ml-auto flex items-center gap-1.5">

@@ -257,15 +257,15 @@ function ProjectCard({ project, index, onPreview, onLivePreview }: { project: ty
           >
             <motion.button
               onClick={(e) => { e.stopPropagation(); onLivePreview(project); }}
-              className="relative flex items-center gap-2.5 bg-[#0b0a08]/80 border border-accent/50 backdrop-blur-md text-accent text-sm font-bold px-5 py-3 rounded-full cursor-pointer whitespace-nowrap overflow-hidden"
+              className="relative flex items-center gap-2.5 bg-[#080d1a]/80 border border-accent/50 backdrop-blur-md text-accent text-sm font-bold px-5 py-3 rounded-full cursor-pointer whitespace-nowrap overflow-hidden"
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
-              style={{ boxShadow: "0 0 20px rgba(185,255,75,0.3), 0 0 60px rgba(185,255,75,0.1), inset 0 0 0 1px rgba(185,255,75,0.25)" }}
+              style={{ boxShadow: "0 0 20px rgba(41,171,226,0.3), 0 0 60px rgba(41,171,226,0.1), inset 0 0 0 1px rgba(41,171,226,0.25)" }}
             >
               {/* Animated glow sweep */}
               <motion.div
                 className="absolute inset-0 rounded-full"
-                style={{ background: "linear-gradient(90deg, transparent 0%, rgba(185,255,75,0.15) 50%, transparent 100%)" }}
+                style={{ background: "linear-gradient(90deg, transparent 0%, rgba(41,171,226,0.15) 50%, transparent 100%)" }}
                 animate={{ x: ["-100%", "200%"] }}
                 transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
               />
@@ -286,8 +286,8 @@ function ProjectCard({ project, index, onPreview, onLivePreview }: { project: ty
         className="absolute inset-0 rounded-2xl pointer-events-none"
         animate={{
           boxShadow: hovered
-            ? "inset 0 0 0 1.5px rgba(185,255,75,0.4), 0 24px 48px rgba(0,0,0,0.4)"
-            : "inset 0 0 0 1.5px rgba(185,255,75,0)",
+            ? "inset 0 0 0 1.5px rgba(41,171,226,0.4), 0 24px 48px rgba(0,0,0,0.4)"
+            : "inset 0 0 0 1.5px rgba(41,171,226,0)",
         }}
         transition={{ duration: 0.35 }}
       />

@@ -89,7 +89,7 @@ export default function FloatingCTA() {
                 animate={{ opacity: [0.4, 0.7, 0.4], scale: [1, 1.35, 1] }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                style={{ background: "radial-gradient(circle, rgba(185,255,75,0.3) 0%, transparent 75%)" }}
+                style={{ background: "radial-gradient(circle, rgba(41,171,226,0.3) 0%, transparent 75%)" }}
               />
             )}
           </AnimatePresence>
@@ -103,7 +103,7 @@ export default function FloatingCTA() {
             className="relative flex items-center justify-center gap-0 bg-accent text-black font-bold cursor-pointer whitespace-nowrap overflow-hidden"
             style={{
               borderRadius: "9999px",
-              boxShadow: "0 8px 32px rgba(185,255,75,0.35), 0 2px 8px rgba(0,0,0,0.3)",
+              boxShadow: "0 8px 32px rgba(41,171,226,0.35), 0 2px 8px rgba(0,0,0,0.3)",
               rotateX: tiltY,
               rotateY: tiltX,
               transformPerspective: 600,

@@ -119,7 +119,7 @@ export default function AuraAIPixelImage({ triggered = false, hovered = false }:
         className="absolute inset-0 pointer-events-none z-10"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(0deg, rgba(185,255,75,0.035) 0px, rgba(185,255,75,0.035) 1px, transparent 1px, transparent 4px)",
+            "repeating-linear-gradient(0deg, rgba(41,171,226,0.035) 0px, rgba(41,171,226,0.035) 1px, transparent 1px, transparent 4px)",
           opacity: 0.5,
         }}
       />
@@ -128,7 +128,7 @@ export default function AuraAIPixelImage({ triggered = false, hovered = false }:
       {glitching && (
         <div
           className="absolute inset-0 pointer-events-none z-30"
-          style={{ background: "rgba(185,255,75,0.1)", mixBlendMode: "screen" }}
+          style={{ background: "rgba(41,171,226,0.1)", mixBlendMode: "screen" }}
         />
       )}
 
@@ -139,7 +139,7 @@ export default function AuraAIPixelImage({ triggered = false, hovered = false }:
           style={{
             height: "3px",
             background:
-              "linear-gradient(90deg, transparent 0%, rgba(185,255,75,0.7) 30%, rgba(255,255,255,0.9) 50%, rgba(185,255,75,0.7) 70%, transparent 100%)",
+              "linear-gradient(90deg, transparent 0%, rgba(41,171,226,0.7) 30%, rgba(255,255,255,0.9) 50%, rgba(41,171,226,0.7) 70%, transparent 100%)",
             filter: "blur(1px)",
           }}
           initial={{ top: "-3%", opacity: 0 }}

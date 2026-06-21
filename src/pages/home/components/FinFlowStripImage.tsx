@@ -80,7 +80,7 @@ export default function FinFlowStripImage({ triggered = false }: Props) {
               style={{
                 top: `calc(${y}% - 0.5px)`,
                 height: "1.5px",
-                background: "rgba(185,255,75,0.55)",
+                background: "rgba(41,171,226,0.55)",
               }}
               initial={{ opacity: 0, scaleX: 0 }}
               animate={{ opacity: [0, 1, 0], scaleX: [0, 1, 1, 0] }}
@@ -100,7 +100,7 @@ export default function FinFlowStripImage({ triggered = false }: Props) {
           style={{
             width: "2px",
             background:
-              "linear-gradient(180deg, transparent 0%, rgba(185,255,75,0.9) 50%, transparent 100%)",
+              "linear-gradient(180deg, transparent 0%, rgba(41,171,226,0.9) 50%, transparent 100%)",
           }}
           initial={{ left: "-2px", opacity: 0 }}
           animate={{ left: ["0%", "102%"], opacity: [0, 1, 1, 0] }}

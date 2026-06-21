@@ -107,8 +107,8 @@ export default function SmartHomeIrisImage({ triggered = false, hovered = false 
           <div
             className="w-4/5 h-4/5 rounded-full pointer-events-none"
             style={{
-              border: "1.5px solid rgba(185,255,75,0.65)",
-              boxShadow: "0 0 22px rgba(185,255,75,0.28), inset 0 0 22px rgba(185,255,75,0.1)",
+              border: "1.5px solid rgba(41,171,226,0.65)",
+              boxShadow: "0 0 22px rgba(41,171,226,0.28), inset 0 0 22px rgba(41,171,226,0.1)",
             }}
           />
         </motion.div>
@@ -123,8 +123,8 @@ export default function SmartHomeIrisImage({ triggered = false, hovered = false 
         <motion.div
           className="w-3/4 h-3/4 rounded-full pointer-events-none"
           style={{
-            border: "1px solid rgba(185,255,75,0.4)",
-            boxShadow: "0 0 30px rgba(185,255,75,0.18), inset 0 0 30px rgba(185,255,75,0.06)",
+            border: "1px solid rgba(41,171,226,0.4)",
+            boxShadow: "0 0 30px rgba(41,171,226,0.18), inset 0 0 30px rgba(41,171,226,0.06)",
           }}
           animate={hovered ? { scale: [1, 1.04, 0.97, 1.02, 1] } : { scale: 1 }}
           transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
@@ -157,7 +157,7 @@ export default function SmartHomeIrisImage({ triggered = false, hovered = false 
                 y1="50"
                 x2={x2.toFixed(2)}
                 y2={y2.toFixed(2)}
-                stroke="rgba(185,255,75,0.7)"
+                stroke="rgba(41,171,226,0.7)"
                 strokeWidth="0.35"
               />
             </motion.svg>
@@ -171,7 +171,7 @@ export default function SmartHomeIrisImage({ triggered = false, hovered = false 
           style={{
             height: "2px",
             background:
-              "linear-gradient(90deg, transparent 0%, rgba(185,255,75,0.9) 50%, transparent 100%)",
+              "linear-gradient(90deg, transparent 0%, rgba(41,171,226,0.9) 50%, transparent 100%)",
           }}
           initial={{ top: "100%", opacity: 0 }}
           animate={{ top: ["-2%", "102%"], opacity: [0, 1, 1, 0] }}

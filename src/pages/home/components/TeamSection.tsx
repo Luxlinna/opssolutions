@@ -142,7 +142,7 @@ function TeamCard({ member, index }: { member: typeof team[0]; index: number }) 
       <motion.div
         className="absolute inset-0 rounded-2xl pointer-events-none"
         animate={{
-          boxShadow: hovered ? "inset 0 0 0 1px rgba(185,255,75,0.22)" : "inset 0 0 0 1px rgba(185,255,75,0)",
+          boxShadow: hovered ? "inset 0 0 0 1px rgba(41,171,226,0.22)" : "inset 0 0 0 1px rgba(41,171,226,0)",
         }}
         transition={{ duration: 0.3 }}
       />

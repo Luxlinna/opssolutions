@@ -33,7 +33,7 @@ export default function ServicePricing({ service }: Props) {
               key={tier.tier}
               className={`rounded-2xl p-8 border transition-all duration-300 ${
                 i === 1
-                  ? "bg-accent border-accent/50 shadow-[0_0_40px_rgba(185,255,75,0.12)]"
+                  ? "bg-accent border-accent/50 shadow-[0_0_40px_rgba(41,171,226,0.12)]"
                   : "bg-dc-card border-dc-text/5 hover:border-dc-text/15"
               }`}
               initial={{ opacity: 0, y: 30 }}

@@ -153,7 +153,7 @@ export default function PortfolioLightbox({ project, onClose }: PortfolioLightbo
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 40, scale: 0.95 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              style={{ boxShadow: "0 40px 120px rgba(0,0,0,0.7), 0 0 0 1px rgba(185,255,75,0.08)" }}
+              style={{ boxShadow: "0 40px 120px rgba(0,0,0,0.7), 0 0 0 1px rgba(41,171,226,0.08)" }}
             >
               {/* ─── Left: Image pane ─────────────────────────────── */}
               <div className="relative w-full lg:w-[55%] shrink-0 overflow-hidden" style={{ minHeight: "260px", maxHeight: "90vh" }}>
@@ -346,11 +346,11 @@ export default function PortfolioLightbox({ project, onClose }: PortfolioLightbo
               {/* Decorative glow */}
               <div
                 className="absolute top-0 right-0 w-72 h-72 pointer-events-none"
-                style={{ background: "radial-gradient(circle at top right, rgba(185,255,75,0.04) 0%, transparent 65%)" }}
+                style={{ background: "radial-gradient(circle at top right, rgba(41,171,226,0.04) 0%, transparent 65%)" }}
               />
               <div
                 className="absolute bottom-0 left-0 w-48 h-48 pointer-events-none"
-                style={{ background: "radial-gradient(circle at bottom left, rgba(185,255,75,0.03) 0%, transparent 65%)" }}
+                style={{ background: "radial-gradient(circle at bottom left, rgba(41,171,226,0.03) 0%, transparent 65%)" }}
               />
             </motion.div>
           </motion.div>

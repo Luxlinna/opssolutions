@@ -7,15 +7,15 @@ html {
   font-size: 17px;
 }
 
-/* ===== DevCraft Theme Variables (dark only) ===== */
+/* ===== OPS Solutions Theme Variables ===== */
 :root {
   --dc-text: 255 255 255;
-  --dc-bg: 11 10 8;
-  --dc-surface: 17 15 13;
-  --dc-card: 22 19 16;
-  --dc-input: 30 26 20;
-  --dc-border: 255 255 255;
-  --dc-muted: 180 170 155;
+  --dc-bg: 8 13 26;
+  --dc-surface: 12 20 38;
+  --dc-card: 15 28 54;
+  --dc-input: 21 37 66;
+  --dc-border: 41 171 226;
+  --dc-muted: 150 175 215;
 }
 
 /* ===== Body theme binding ===== */
@@ -30,11 +30,3 @@ body {
   min-height: 100vh;
 }
 
-/* ===== Custom cursor — hide native on pointer/desktop devices ===== */
-@media (hover: hover) and (pointer: fine) {
-  *,
-  *::before,
-  *::after {
-    cursor: none !important;
-  }
-}

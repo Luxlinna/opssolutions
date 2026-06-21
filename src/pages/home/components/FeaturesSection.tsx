@@ -62,7 +62,7 @@ function FeatureCard({ feat, index }: { feat: typeof features[0]; index: number 
       {/* Hover bg sweep */}
       <motion.div
         className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-        style={{ background: "radial-gradient(ellipse at 20% 20%, rgba(185,255,75,0.04) 0%, transparent 60%)" }}
+        style={{ background: "radial-gradient(ellipse at 20% 20%, rgba(41,171,226,0.04) 0%, transparent 60%)" }}
       />
 
       {/* Background number */}
@@ -175,7 +175,7 @@ export default function FeaturesSection() {
         >
           {/* Decorative bg */}
           <div className="absolute top-0 right-0 w-64 h-64 rounded-full pointer-events-none"
-            style={{ background: "radial-gradient(circle, rgba(185,255,75,0.04) 0%, transparent 70%)" }} />
+            style={{ background: "radial-gradient(circle, rgba(41,171,226,0.04) 0%, transparent 70%)" }} />
 
           <p className="text-dc-text/30 text-xs font-mono tracking-widest mb-8 text-center">BY THE NUMBERS</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-4">
@@ -189,7 +189,7 @@ export default function FeaturesSection() {
               >
                 <motion.div
                   className="w-10 h-10 flex items-center justify-center rounded-full bg-dc-text/5"
-                  whileHover={{ scale: 1.15, backgroundColor: "rgba(185,255,75,0.12)" }}
+                  whileHover={{ scale: 1.15, backgroundColor: "rgba(41,171,226,0.12)" }}
                   transition={{ type: "spring", stiffness: 350 }}
                 >
                   <i className={`${item.icon} text-accent text-base`}></i>

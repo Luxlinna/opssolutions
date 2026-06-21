@@ -85,7 +85,7 @@ export default function PageTransitionCurtain() {
       {/* Accent stripe */}
       <div
         className="absolute inset-y-0 left-0 w-1"
-        style={{ background: "rgba(185,255,75,0.8)" }}
+        style={{ background: "rgba(41,171,226,0.8)" }}
       />
 
       {/* Center label */}
@@ -115,7 +115,7 @@ export default function PageTransitionCurtain() {
         className="absolute inset-0 pointer-events-none opacity-[0.04]"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(185,255,75,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(185,255,75,0.8) 1px, transparent 1px)",
+            "linear-gradient(rgba(41,171,226,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(41,171,226,0.8) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
         }}
       />

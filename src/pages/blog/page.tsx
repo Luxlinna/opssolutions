@@ -129,9 +129,9 @@ export default function BlogPage() {
   const rest = showFeatured ? filtered.filter(p => !p.featured) : filtered;
 
   return (
-    <div className="bg-[#0b0a08] min-h-screen">
+    <div className="bg-[#080d1a] min-h-screen">
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-[#0b0a08]/95 backdrop-blur-md border-b border-white/5">
+      <header className="fixed top-0 left-0 w-full z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           <button onClick={() => navigate("/")} className="flex items-center gap-2 text-white/50 hover:text-white transition-colors duration-200 cursor-pointer whitespace-nowrap">
             <i className="ri-arrow-left-line text-base" />
@@ -430,7 +430,7 @@ function NewsletterSection() {
   };
 
   return (
-    <motion.div className="bg-[#161310] border border-accent/15 rounded-2xl p-10 md:p-14"
+    <motion.div className="bg-[#0f1c36] border border-accent/15 rounded-2xl p-10 md:p-14"
       initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }} transition={{ duration: 0.7 }}>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

@@ -7,23 +7,28 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "#b9ff4b",
+        accent: "#29abe2",
+        primary: "#253c7d",
+        "ops-blue": "#253c7d",
+        "ops-sky": "#29abe2",
+        "ops-gray": "#434143",
         "dc-text": "rgb(var(--dc-text) / <alpha-value>)",
         "dc-bg": "rgb(var(--dc-bg) / <alpha-value>)",
         "dc-surface": "rgb(var(--dc-surface) / <alpha-value>)",
         "dc-card": "rgb(var(--dc-card) / <alpha-value>)",
         "dc-input": "rgb(var(--dc-input) / <alpha-value>)",
         dark: {
-          900: "#0b0a08",
-          800: "#110f0d",
-          700: "#161310",
-          600: "#1e1a14",
-          500: "#2a2520",
+          900: "#080d1a",
+          800: "#0c1426",
+          700: "#0f1c36",
+          600: "#152542",
+          500: "#1c3059",
         },
       },
       fontFamily: {
-        grotesk: ["Space Grotesk", "sans-serif"],
+        grotesk: ["Source Sans 3", "sans-serif"],
         mono: ["Space Mono", "monospace"],
+        khmer: ["Noto Sans Khmer", "sans-serif"],
       },
       animation: {
         "fade-up": "fadeUp 0.8s ease forwards",

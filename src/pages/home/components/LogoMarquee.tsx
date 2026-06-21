@@ -35,7 +35,7 @@ export default function LogoMarquee() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <p className="text-dc-text/35 text-xs font-mono tracking-[0.25em] uppercase">
+        <p className="text-dc-text/60 text-xs font-mono tracking-[0.25em] uppercase">
           Trusted by teams at world-class companies
         </p>
       </motion.div>
@@ -64,9 +64,9 @@ export default function LogoMarquee() {
               transition={{ type: "spring", stiffness: 400, damping: 20 }}
             >
               <div className="w-8 h-8 flex items-center justify-center">
-                <i className={`${client.icon} text-xl text-dc-text/30 group-hover:text-accent transition-colors duration-300`} />
+                <i className={`${client.icon} text-xl text-dc-text/65 group-hover:text-accent transition-colors duration-300`} />
               </div>
-              <span className="text-dc-text/40 text-sm font-medium font-grotesk group-hover:text-dc-text/70 transition-colors duration-300 tracking-tight">
+              <span className="text-dc-text/75 text-sm font-medium font-grotesk group-hover:text-dc-text/95 transition-colors duration-300 tracking-tight">
                 {client.name}
               </span>
             </motion.div>
